@@ -1,0 +1,93 @@
+/* Main Container */
+.booth-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  color: #ff5500;
+  overflow: hidden;
+}
+
+/* Header */
+.booth-header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #ff5500;
+  position: absolute;
+  top: 20px;
+}
+
+/* Flash Bulb */
+.flash-bulb {
+  width: 80px;
+  height: 120px;
+  background: #222;
+  border-radius: 40px;
+  position: relative;
+  border: 3px solid #444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.flash-bulb.ready {
+  box-shadow: 0 0 20px #ff5500;
+}
+
+.charge-level {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #ff5500, #ff8c00);
+  transition: height 0.15s;
+}
+
+/* Flash Interaction */
+.flash-interaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flash-instructions {
+  font-size: 1.5rem;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* Confetti Overrides */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booth-header {
+    font-size: 1.8rem;
+  }
+  
+  .flash-bulb {
+    width: 60px;
+    height: 100px;
+  }
+  
+  .flash-instructions {
+    font-size: 1.2rem;
+  }
+}
