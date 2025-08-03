@@ -1,7 +1,7 @@
 📸 Retro PhotoBooth 
 <div align="center"> <img src="public/demo-preview.gif" width="400" alt="PhotoBooth in action"> <p><em>A complete photobooth experience with realistic effects</em></p> </div>
 ✨ Key Features
-🎮 Interactive Experience
+Interactive Experience
 3-stage capture sequence with visual countdown
 
 Dynamic flash charging animation
@@ -10,7 +10,7 @@ Instant photostrip generation
 
 One-click download as high-quality PNG
 
-🖼️ Visual Effects
+ Visual Effects
 5 professional-grade filters:
 
 Vintage (Sepia)
@@ -99,6 +99,7 @@ To adjust timing:
 js
 // Capture sequence intervals
 const CAPTURE_DELAY = 2000; // 2 seconds
+
 
 
 This version focuses on your original work while presenting it professionally. The structure highlights your implementation choices and makes the project easy to understand and extend.
